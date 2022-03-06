@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Welcome Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body class="welcome">
+<h1 id="h1">Welcome</h1>
+<div></div>
+<h2 id="h2"> Login</h2>
+</div>
+<span id="u1l">Enter User 1 name </span><span><input type="text" id="player1_name_input" class="form-control" placeholder="Player 1 name" ></span>
+<br><span id="u12">Enter User 2 name </span><span><input type="text" id="player2_name_input" class="form-control" placeholder="Player 2 name" ></span>
+    </body>
+    <button id="btn" class="btn btn-primary" style="width:30%" onclick="move">Continue</button>
+    <script>
+var set_name_1="";
+var set_name_2="";
+function update_name(){
+   
+     set_name_1=document.getElementById("player1_name_input").value;
+     set_name_2=document.getElementById("player2_name_input").value;
+     localStorage.setItem("p1n", set_name_1);
+     localStorage.setItem("p2n", set_name_2);
+}
+window.location = "math.html"
+    </script>
+    </html>
